@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineer | Portfolio</title>
+    <meta name="description" content="Personal portfolio of a Software Engineer. Showcasing IT projects, automation, and full-stack development.">
+    
+    <!-- Source Code Pro Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Lucide Icons (Minimalistic rounded SVG icons) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">&gt;_ n1xyy.dev</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Tech Stack</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#about">About</a>
+            <a href="#skills">Tech Stack</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero section">
+            <div class="container hero-content">
+                <div class="code-block-wrapper">
+                    <pre class="hero-code"><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+    <span class="property">name</span>: <span class="string">"Software Engineer"</span>,
+    <span class="property">focus</span>: [<span class="string">"Backend"</span>, <span class="string">"Bots"</span>, <span class="string">"Fullstack"</span>, <span class="string">"iOS"</span>],
+    <span class="property">status</span>: <span class="string">"Building robust systems"</span>
+};</code></pre>
+                </div>
+                <h1 class="hero-title">System Architecture & <br><span id="typewriter"></span><span class="blinking-cursor">_</span></h1>
+                <p class="hero-subtitle">Creating minimal, high-performance IT solutions. From crypto algorithms to automated CRM systems.</p>
+                
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <i data-lucide="terminal"></i> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i data-lucide="mail"></i> Get in touch
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills / Tech Stack Section -->
+        <section id="skills" class="skills section border-top">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">/* Tech_Stack */</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i data-lucide="server"></i>
+                        <h3>Backend</h3>
+                        <p>Python, Node.js, REST API, WebSockets</p>
+                    </div>
+                    <div class="skill-card">
+                        <i data-lucide="database"></i>
+                        <h3>Databases</h3>
+                        <p>PostgreSQL, MongoDB, SQL/NoSQL</p>
+                    </div>
+                    <div class="skill-card">
+                        <i data-lucide="smartphone"></i>
+                        <h3>Mobile & Web</h3>
+                        <p>SwiftUI/iOS, HTML/CSS, React/Vite</p>
+                    </div>
+                    <div class="skill-card">
+                        <i data-lucide="bot"></i>
+                        <h3>Automation</h3>
+                        <p>Telegram Bots, Scraping, Analytics</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section border-top">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">/* Active_Projects */</h2>
+                </div>
+                <div class="projects-grid">
+                    
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i data-lucide="activity" class="project-icon"></i>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+                                <a href="#" aria-label="External Link"><i data-lucide="external-link"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Crypto Signals Platform</h3>
+                        <p class="project-desc">A complex multi-component system comprising a backend machine learning engine and real-time WebSocket interface with a native SwiftUI mobile application.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>SwiftUI</span>
+                            <span>WebSockets</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i data-lucide="brain-circuit" class="project-icon"></i>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">EduFlow AI</h3>
+                        <p class="project-desc">An automated educational platform leveraging AI for streamlining learning paths and interactive exercises.</p>
+                        <div class="project-tags">
+                            <span>AI Integration</span>
+                            <span>Fullstack</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i data-lucide="calendar-clock" class="project-icon"></i>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+                                <a href="#" aria-label="External Link"><i data-lucide="external-link"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Smart Schedule Bot</h3>
+                        <p class="project-desc">Telegram automation tool designed for multi-group schedule management, real-time fetching, and homework data persistence.</p>
+                        <div class="project-tags">
+                            <span>Telegram API</span>
+                            <span>Python</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i data-lucide="library" class="project-icon"></i>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Libify System</h3>
+                        <p class="project-desc">A unified product architecture encompassing a digital store platform and an iOS client for seamless digital content management.</p>
+                        <div class="project-tags">
+                            <span>API Architecture</span>
+                            <span>E-Commerce</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i data-lucide="briefcase" class="project-icon"></i>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Enterprise CRM & Agro</h3>
+                        <p class="project-desc">Business-focused dashboards and public-facing websites for agro-industrial analytics and customer relationship management.</p>
+                        <div class="project-tags">
+                            <span>Dashboard</span>
+                            <span>Frontend</span>
+                            <span>Analytics</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i data-lucide="cpu" class="project-icon"></i>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Microservices & Scrapers</h3>
+                        <p class="project-desc">Collection of micro-backend services including TikTok scrapers, Twitch streaming data aggregators, and custom chatbots.</p>
+                        <div class="project-tags">
+                            <span>Scraping</span>
+                            <span>Microservices</span>
+                            <span>Data Parsing</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section border-top">
+            <div class="container">
+                <div class="contact-box">
+                    <h2 class="section-title">/* Initialize_Connection */</h2>
+                    <p>Currently open for new opportunities, collaborations, and challenging engineering tasks.</p>
+                    <a href="https://t.me/sadbillionaire" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-top: 2rem;">
+                        <i data-lucide="send"></i> Send Protocol
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer border-top">
+        <div class="container footer-content">
+            <p>&copy; <span id="year"></span> Developer. Engineered with clean code.</p>
+            <div class="social-links">
+                <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
