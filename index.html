@@ -46,7 +46,7 @@
             <div class="container hero-content">
                 <div class="code-block-wrapper">
                     <pre class="hero-code"><code><span class="keyword">const</span> <span class="variable">developer</span> = {
-    <span class="property">name</span>: <span class="string">"Software Engineer"</span>,
+    <span class="property">name</span>: <span class="string">"Nazar / n1xyy"</span>,
     <span class="property">focus</span>: [<span class="string">"Backend"</span>, <span class="string">"Bots"</span>, <span class="string">"Fullstack"</span>, <span class="string">"iOS"</span>],
     <span class="property">status</span>: <span class="string">"Building robust systems"</span>
 };</code></pre>
@@ -103,107 +103,147 @@
                     <h2 class="section-title">/* Active_Projects */</h2>
                 </div>
                 <div class="projects-grid">
+
+                    <!-- // EdTech -->
                     
-                    <!-- Project 1 -->
-                    <div class="project-card">
+                    <!-- Project 1: МПМЕК -->
+                    <div class="project-card" id="project-mpmek">
                         <div class="project-header">
-                            <i data-lucide="activity" class="project-icon"></i>
-                            <div class="project-links">
-                                <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
-                                <a href="#" aria-label="External Link"><i data-lucide="external-link"></i></a>
-                            </div>
+                            <span class="project-number">// 01</span>
+                            <h3 class="project-title">МПМЕК — Розклад студента</h3>
+                            <span class="project-type">PWA + Telegram Bot</span>
                         </div>
-                        <h3 class="project-title">Crypto Signals Platform</h3>
-                        <p class="project-desc">A complex multi-component system comprising a backend machine learning engine and real-time WebSocket interface with a native SwiftUI mobile application.</p>
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>SwiftUI</span>
-                            <span>WebSockets</span>
+                        <div class="project-media">
+                            <img src="screencasts/mpmek.jpg" alt="МПМЕК скріншот" class="project-screenshot">
+                        </div>
+                        <p class="project-desc">Безкоштовний PWA-додаток для студентів Могилів-Подільського коледжу. Розклад пар, заміни, домашні завдання, push-сповіщення щоранку. Синхронізація між пристроями. Telegram-бот як альтернатива. PBKDF2 + AES-256 шифрування.</p>
+                        <div class="project-stack">
+                            <span>PWA</span><span>Vanilla JS</span><span>Python</span><span>PostgreSQL</span><span>Redis</span><span>Push Notifications</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://mpmek.site/" target="_blank" class="link-live">[ Live ]</a>
+                            <a href="https://t.me/mpmek_bot" target="_blank" class="link-bot">[ Bot ]</a>
                         </div>
                     </div>
 
-                    <!-- Project 2 -->
-                    <div class="project-card">
+                    <!-- Project 2: NexLearn -->
+                    <div class="project-card" id="project-nexlearn">
                         <div class="project-header">
-                            <i data-lucide="brain-circuit" class="project-icon"></i>
-                            <div class="project-links">
-                                <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
-                            </div>
+                            <span class="project-number">// 02</span>
+                            <h3 class="project-title">NexLearn — LMS платформа</h3>
+                            <span class="project-type">Fullstack Web App</span>
                         </div>
-                        <h3 class="project-title">EduFlow AI</h3>
-                        <p class="project-desc">An automated educational platform leveraging AI for streamlining learning paths and interactive exercises.</p>
-                        <div class="project-tags">
-                            <span>AI Integration</span>
-                            <span>Fullstack</span>
-                            <span>Node.js</span>
+                        <div class="project-media">
+                            <img src="screencasts/nexlearn.jpg" alt="NexLearn скріншот" class="project-screenshot">
+                        </div>
+                        <p class="project-desc">Веб-орієнтована LMS для центрів підвищення кваліфікації. Управління курсами, автоматичне тестування і оцінювання, генерація сертифікатів. Комерційний продукт, переговори з університетами щодо впровадження.</p>
+                        <div class="project-stack">
+                            <span>Next.js</span><span>Node.js</span><span>PostgreSQL</span><span>REST API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://nexlearn.space/" target="_blank" class="link-live">[ Live ]</a>
                         </div>
                     </div>
 
-                    <!-- Project 3 -->
-                    <div class="project-card">
+                    <!-- // AI SaaS -->
+                    
+                    <!-- Project 3: CheckIt -->
+                    <div class="project-card" id="project-checkit">
                         <div class="project-header">
-                            <i data-lucide="calendar-clock" class="project-icon"></i>
-                            <div class="project-links">
-                                <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
-                                <a href="#" aria-label="External Link"><i data-lucide="external-link"></i></a>
-                            </div>
+                            <span class="project-number">// 03</span>
+                            <h3 class="project-title">CheckIt — AI валідатор бізнес-ідей</h3>
+                            <span class="project-type">AI SaaS / Fullstack</span>
                         </div>
-                        <h3 class="project-title">Smart Schedule Bot</h3>
-                        <p class="project-desc">Telegram automation tool designed for multi-group schedule management, real-time fetching, and homework data persistence.</p>
-                        <div class="project-tags">
-                            <span>Telegram API</span>
-                            <span>Python</span>
-                            <span>PostgreSQL</span>
+                        <div class="project-media">
+                            <img src="screencasts/checkit.jpg" alt="CheckIt скріншот" class="project-screenshot">
+                        </div>
+                        <p class="project-desc">AI-платформа для первинної оцінки стартап-ідей. Аналізує ринок, конкурентів, ризики і бізнес-модель за секунди. PDF-звіти, збереження проектів, публічні посилання. Пітч подавався на стартап-конкурс.</p>
+                        <div class="project-stack">
+                            <span>Next.js</span><span>TypeScript</span><span>TailwindCSS</span><span>Framer Motion</span><span>Mistral AI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://checkit-rho.vercel.app/" target="_blank" class="link-live">[ Live ]</a>
                         </div>
                     </div>
 
-                    <!-- Project 4 -->
-                    <div class="project-card">
+                    <!-- Project 4: ResumeAI -->
+                    <div class="project-card" id="project-resumeai">
                         <div class="project-header">
-                            <i data-lucide="library" class="project-icon"></i>
-                            <div class="project-links">
-                                <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
-                            </div>
+                            <span class="project-number">// 04</span>
+                            <h3 class="project-title">ResumeAI — AI конструктор резюме</h3>
+                            <span class="project-type">AI SaaS / Fullstack</span>
                         </div>
-                        <h3 class="project-title">Libify System</h3>
-                        <p class="project-desc">A unified product architecture encompassing a digital store platform and an iOS client for seamless digital content management.</p>
-                        <div class="project-tags">
-                            <span>API Architecture</span>
-                            <span>E-Commerce</span>
+                        <div class="project-media">
+                            <img src="screencasts/resumeai.jpg" alt="ResumeAI скріншот" class="project-screenshot">
+                        </div>
+                        <p class="project-desc">AI-конструктор резюме з оптимізацією під ATS-системи. Адаптація під конкретну вакансію, генерація супровідних листів, 10+ мов. Freemium модель ($12/міс Pro, $25/міс Premium).</p>
+                        <div class="project-stack">
+                            <span>Next.js</span><span>TypeScript</span><span>AI Integration</span><span>PDF Export</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://resume-ai-two-sigma.vercel.app/" target="_blank" class="link-live">[ Live ]</a>
                         </div>
                     </div>
 
-                    <!-- Project 5 -->
-                    <div class="project-card">
+                    <!-- // Tools & PWA -->
+                    
+                    <!-- Project 5: DevToolKit -->
+                    <div class="project-card" id="project-devtoolkit">
                         <div class="project-header">
-                            <i data-lucide="briefcase" class="project-icon"></i>
-                            <div class="project-links">
-                                <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
-                            </div>
+                            <span class="project-number">// 05</span>
+                            <h3 class="project-title">DevToolKit — Інструменти розробника</h3>
+                            <span class="project-type">PWA + Telegram Mini App</span>
                         </div>
-                        <h3 class="project-title">Enterprise CRM & Agro</h3>
-                        <p class="project-desc">Business-focused dashboards and public-facing websites for agro-industrial analytics and customer relationship management.</p>
-                        <div class="project-tags">
-                            <span>Dashboard</span>
-                            <span>Frontend</span>
-                            <span>Analytics</span>
+                        <div class="project-media">
+                            <img src="screencasts/devtoolskit.jpg" alt="DevToolKit скріншот" class="project-screenshot">
+                        </div>
+                        <p class="project-desc">Набір утиліт для розробників: Color Picker, CSS Generator, JSON Formatter, Pomodoro таймер. Працює як PWA у браузері і як Telegram Mini App. Оффлайн режим.</p>
+                        <div class="project-stack">
+                            <span>PWA</span><span>Vanilla JS</span><span>Telegram Mini App API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://dev-tool-kit-seven.vercel.app/" target="_blank" class="link-live">[ Live ]</a>
+                            <a href="https://t.me/DevToolsKit_Bot" target="_blank" class="link-bot">[ Bot ]</a>
                         </div>
                     </div>
 
-                    <!-- Project 6 -->
-                    <div class="project-card">
+                    <!-- // Client Work -->
+
+                    <!-- Project 6: GreeceTravel -->
+                    <div class="project-card" id="project-greecetravel">
                         <div class="project-header">
-                            <i data-lucide="cpu" class="project-icon"></i>
-                            <div class="project-links">
-                                <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
-                            </div>
+                            <span class="project-number">// 06</span>
+                            <h3 class="project-title">GreeceTravel — Лендинг для паломницьких поїздок</h3>
+                            <span class="project-type">Landing Page</span>
                         </div>
-                        <h3 class="project-title">Microservices & Scrapers</h3>
-                        <p class="project-desc">Collection of micro-backend services including TikTok scrapers, Twitch streaming data aggregators, and custom chatbots.</p>
-                        <div class="project-tags">
-                            <span>Scraping</span>
-                            <span>Microservices</span>
-                            <span>Data Parsing</span>
+                        <div class="project-media">
+                            <img src="screencasts/greecetravel.jpg" alt="GreeceTravel скріншот" class="project-screenshot">
+                        </div>
+                        <p class="project-desc">Лендинг під ключ для організатора паломницьких поїздок Україна→Греція. Маршрут, FAQ, форма бронювання, підрахунок вільних місць. SEO-оптимізований. Реальний клієнт, реальні поїздки.</p>
+                        <div class="project-stack">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Vercel</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://greecetravel.vercel.app/" target="_blank" class="link-live">[ Live ]</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 7: Libify -->
+                    <div class="project-card" id="project-libify">
+                        <div class="project-header">
+                            <span class="project-number">// 07</span>
+                            <h3 class="project-title">Libify — Читалка книг</h3>
+                            <span class="project-type">PWA</span>
+                        </div>
+                        <div class="project-media">
+                            <img src="screencasts/libifystore.jpg" alt="Libify скріншот" class="project-screenshot">
+                        </div>
+                        <p class="project-desc">PWA-читалка книг з доступом до тисяч творів. Підтримка FB2 і PDF форматів, офлайн режим, нічна тема, особиста бібліотека. Встановлюється на екран як нативний застосунок.</p>
+                        <div class="project-stack">
+                            <span>PWA</span><span>Vanilla JS</span><span>FB2</span><span>PDF</span><span>Flibusta API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://libify.store/" target="_blank" class="link-live">[ Live ]</a>
                         </div>
                     </div>
 
@@ -218,7 +258,7 @@
                     <h2 class="section-title">/* Initialize_Connection */</h2>
                     <p>Currently open for new opportunities, collaborations, and challenging engineering tasks.</p>
                     <a href="https://t.me/sadbillionaire" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-top: 2rem;">
-                        <i data-lucide="send"></i> Send Protocol
+                        <i data-lucide="send"></i> Написати в Telegram
                     </a>
                 </div>
             </div>
