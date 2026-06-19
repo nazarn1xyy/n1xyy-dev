@@ -760,7 +760,8 @@ p {
 .btn-primary {
   font-family: monospace;
   font-size: 13px;
-  color: #ffffff;
+  background: #ffffff;
+  color: #000000;
   border: 1px solid #ffffff;
   padding: 10px 20px;
   text-decoration: none;
@@ -769,8 +770,8 @@ p {
 }
 
 .btn-primary:hover {
-  background: #ffffff;
-  color: #000;
+  background: transparent;
+  color: #ffffff;
 }
 
 .btn-secondary {
