@@ -549,114 +549,251 @@ p {
     }
 }
 
-/* Project Cards */
-.project-card {
-  border: 1px solid #333;
-  padding: 24px;
-  margin-bottom: 24px;
-  position: relative;
+/* ── Services ── */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin: 20px 0;
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.service-item {
+  border: 1px solid #2a2a2a;
+  padding: 16px;
   transition: border-color 0.2s;
-  border-radius: 0;
+  background-color: var(--bg-secondary);
+  border-radius: 12px;
+}
+
+.service-item:hover {
+  border-color: #ffffff;
+}
+
+.service-icon {
+  font-family: monospace;
+  font-size: 10px;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.service-item h4 {
+  font-family: monospace;
+  font-size: 13px;
+  margin: 0 0 6px 0;
+  color: #ddd;
+}
+
+.service-item p {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ── Project Cards ── */
+.project-card {
+  border: 1px solid #2a2a2a;
+  padding: 24px;
+  margin-bottom: 20px;
+  transition: border-color 0.2s ease;
   background-color: transparent;
+  border-radius: 0;
+  display: flex;
   flex-direction: column;
 }
 
 .project-card:hover {
-  border-color: #ffffff; /* білий */
+  border-color: #ffffff;
 }
 
-.project-number {
-  font-size: 11px;
-  color: #555;
+.project-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.project-num {
   font-family: monospace;
-  display: block;
-  margin-bottom: 4px;
+  font-size: 11px;
+  color: #444;
 }
 
-.project-type {
-  font-size: 11px;
+.project-tag {
+  font-family: monospace;
+  font-size: 10px;
   color: #ffffff;
   border: 1px solid #ffffff;
   padding: 2px 8px;
+  opacity: 0.7;
+}
+
+.project-title {
   font-family: monospace;
-  margin-left: 12px;
+  font-size: 15px;
+  margin: 0 0 12px 0;
+  color: #eee;
 }
 
 /* Media placeholder */
-.media-placeholder {
-  background: #0a0a0a;
-  border: 1px dashed #333;
-  height: 200px;
+.project-media-placeholder {
+  background: #080808;
+  border: 1px dashed #2a2a2a;
+  height: 180px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 16px 0;
-  cursor: pointer;
+  gap: 8px;
+  margin: 12px 0;
   font-family: monospace;
-  color: #444;
+  color: #333;
 }
 
-.media-placeholder:hover {
-  border-color: #555;
-  color: #666;
+.project-media-placeholder span {
+  font-size: 13px;
 }
 
-.placeholder-icon {
-  font-size: 24px;
-  margin-bottom: 8px;
+.project-media-placeholder small {
+  font-size: 10px;
+  color: #252525;
 }
 
-.placeholder-text {
-  font-size: 12px;
+/* Коли додаєш реальне медіа — цей клас для відео/зображення */
+.project-video,
+.project-screenshot {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  margin: 12px 0;
+  border: 1px solid #2a2a2a;
 }
 
-/* Stack tags */
+.project-desc {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #888;
+  margin: 12px 0;
+}
+
 .project-stack {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
   margin: 12px 0;
 }
 
 .project-stack span {
-  font-size: 11px;
   font-family: monospace;
-  color: #888;
-  border: 1px solid #333;
+  font-size: 10px;
+  color: #666;
+  border: 1px solid #2a2a2a;
   padding: 2px 8px;
 }
 
-/* Links */
 .project-links {
   display: flex;
-  gap: 12px;
-  margin-top: 16px;
+  gap: 16px;
+  margin-top: 14px;
+  flex-wrap: wrap;
 }
 
 .project-links a {
   font-family: monospace;
   font-size: 12px;
   text-decoration: none;
-  padding: 4px 0;
+  color: #ffffff;
+  opacity: 0.8;
+  transition: opacity 0.15s;
 }
 
-.link-live { color: #ffffff; }
-.link-bot { color: #4af; }
-.link-github { color: #888; }
-
 .project-links a:hover {
+  opacity: 1;
   text-decoration: underline;
 }
 
-.project-video,
-.project-screenshot {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  display: block;
-  margin: 16px 0;
-  border: 1px solid #222;
+/* Мобільна адаптація */
+@media (max-width: 600px) {
+  .project-card {
+    padding: 16px;
+  }
+  .project-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .project-links {
+    gap: 12px;
+  }
+}
+
+/* ── Contact Section ── */
+.contact-status {
+  font-family: monospace;
+  font-size: 12px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.contact-desc {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+  justify-content: center;
+}
+
+.btn-primary {
+  font-family: monospace;
+  font-size: 13px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  border-radius: 8px;
+}
+
+.btn-primary:hover {
+  background: #ffffff;
+  color: #000;
+}
+
+.btn-secondary {
+  font-family: monospace;
+  font-size: 13px;
+  color: #666;
+  border: 1px solid #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
+  border-radius: 8px;
+}
+
+.btn-secondary:hover {
+  border-color: #666;
+  color: #aaa;
+}
+
+.contact-note {
+  font-family: monospace;
+  font-size: 11px;
+  color: #333;
+  margin-top: 12px;
 }
 
 
